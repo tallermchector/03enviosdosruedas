@@ -1,0 +1,6 @@
+{
+  "name": "Envíos DosRuedas",
+  "description": "Plataforma logística, servicio de mensajería y envíos e-commerce en Mar del Plata. Tu solución confiable.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
