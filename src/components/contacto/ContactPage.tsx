@@ -4,6 +4,7 @@ import ContactInfo from "./ContactInfo";
 import BusinessHours from "./BusinessHours";
 import ContactForm from "./ContactForm";
 import ContactMap from "./ContactMap";
+import OperationalZoneMap from "./OperationalZoneMap";
 
 interface ContactPageProps {
   onBackToHome?: () => void;
@@ -158,7 +159,10 @@ export default function ContactPage({ onBackToHome }: ContactPageProps) {
         </div>
       </section>
 
-      {/* 5. ContactMap Component */}
+      {/* 5. OperationalZoneMap Component */}
+      <OperationalZoneMap />
+
+      {/* 6. ContactMap Component */}
       <ContactMap copiedField={copiedField} onCopy={handleCopy} />
 
     </div>
