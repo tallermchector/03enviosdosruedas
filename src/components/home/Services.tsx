@@ -18,15 +18,15 @@ export default function Services({ onOpenCalculator }: ServicesProps) {
   const calculatedExpressFactor = (6 - expressHours) * 0.3 + 0.9;
 
   return (
-    <section id="servicios" className="relative bg-slate-100 py-20 border-b border-slate-200">
+    <section id="servicios" className="relative bg-blue-100 py-20 border-y border-blue-200/60 text-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-yellow-400/10 text-yellow-600 rounded-full font-sans text-xs sm:text-sm font-semibold tracking-wider uppercase border border-yellow-400/20">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-[#0636A5]/10 text-[#0636A5] rounded-full font-sans text-xs sm:text-sm font-semibold tracking-wider uppercase border border-[#0636A5]/25">
             Nuestros Despachos
           </span>
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-blue-900 tracking-wider uppercase leading-none">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0636A5] tracking-wider uppercase leading-none">
             Soluciones Logísticas
           </h2>
           <p className="font-sans text-base sm:text-lg text-slate-600 font-normal">

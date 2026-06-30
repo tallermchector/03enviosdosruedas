@@ -3,7 +3,7 @@ import { TESTIMONIALS_DATA } from "../../data";
 
 export default function Reviews() {
   return (
-    <section id="resenas" className="relative py-20 bg-slate-100 border-b border-slate-200">
+    <section id="resenas" className="relative py-20 bg-white border-b border-slate-200 z-10 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.05)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

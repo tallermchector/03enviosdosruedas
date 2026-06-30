@@ -18,16 +18,10 @@ export default function DynamicCTA({ onOpenCalculator }: DynamicCTAProps) {
   };
 
   return (
-    <section className="relative py-28 bg-blue-900 overflow-hidden text-center text-white" id="cta-dynamic">
-      {/* Abstract Glowing Background and contrast tint overlays */}
+    <section className="relative py-28 bg-blue-100 overflow-hidden text-center text-slate-800 border-y border-blue-200/60" id="cta-dynamic">
+      {/* Abstract background */}
       <div className="absolute inset-0 z-0 select-none pointer-events-none">
-        <img 
-          src="/abstracto_background.jpeg" 
-          alt="Abstract Logística Background" 
-          className="w-full h-full object-cover opacity-20 scale-105"
-          referrerPolicy="no-referrer"
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-950/95 via-blue-950/90 to-slate-900/90" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.01)_1px,transparent_1px)] bg-[size:40px_40px]" />
       </div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -36,7 +30,7 @@ export default function DynamicCTA({ onOpenCalculator }: DynamicCTAProps) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="bg-slate-900/80 border border-white/10 rounded-3xl p-8 sm:p-12 md:p-16 backdrop-blur-md shadow-2xl relative overflow-hidden"
+          className="bg-gradient-to-br from-[#0636A5] to-[#1E3A8A] border-2 border-yellow-400/20 rounded-3xl p-8 sm:p-12 md:p-16 shadow-2xl relative overflow-hidden text-white"
         >
           {/* Accent decoration glowing circles */}
           <div className="absolute top-0 right-0 w-48 h-48 bg-yellow-500/10 rounded-full blur-3xl -z-10" />

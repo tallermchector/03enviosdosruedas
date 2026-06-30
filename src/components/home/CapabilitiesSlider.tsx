@@ -21,24 +21,24 @@ export default function CapabilitiesSlider() {
   };
 
   return (
-    <section className="relative py-20 bg-slate-900 overflow-hidden text-white" id="capabilities">
+    <section className="relative py-20 bg-blue-100 overflow-hidden text-slate-800 border-y border-blue-200/60" id="capabilities">
       
       {/* Abstract geometric background lines */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
-      <div className="absolute -top-40 right-20 w-[400px] h-[400px] bg-blue-500/10 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.01)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
+      <div className="absolute -top-40 right-20 w-[400px] h-[400px] bg-[#0636A5]/5 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute -bottom-40 left-20 w-[400px] h-[400px] bg-yellow-500/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-left max-w-3xl mb-14 space-y-4">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-yellow-400/10 border border-yellow-500/30 text-yellow-500 rounded-full font-sans text-xs sm:text-sm font-semibold uppercase tracking-wider">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-[#0636A5]/10 border border-[#0636A5]/20 text-[#0636A5] rounded-full font-sans text-xs sm:text-sm font-semibold uppercase tracking-wider">
             Capacidades Dinámicas
           </span>
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-wider uppercase leading-none">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0636A5] tracking-wider uppercase leading-none">
             Soluciones a Medida
           </h2>
-          <p className="font-sans text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
+          <p className="font-sans text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
             Hemos redefinido los estándares de la logística urbana en Mar del Plata para ofrecerte una ventaja comercial real, respaldada por tecnología aplicada.
           </p>
         </div>
@@ -62,18 +62,18 @@ export default function CapabilitiesSlider() {
                     onClick={() => handleSelectTab(cap.id)}
                     className={`flex-1 min-w-[280px] lg:min-w-0 snap-start text-left p-6 sm:p-7 rounded-2xl border transition-all duration-300 cursor-pointer flex flex-col justify-between h-full relative group ${
                       isActive 
-                        ? "bg-slate-800 border-yellow-500 shadow-xl shadow-yellow-500/5" 
-                        : "bg-slate-800/30 border-slate-700/50 hover:bg-slate-800/50 hover:border-slate-600"
+                        ? "bg-[#0636A5] border-[#0636A5] text-white shadow-xl shadow-[#0636A5]/10" 
+                        : "bg-white border-slate-200 text-slate-800 hover:bg-slate-50 hover:border-slate-300"
                     }`}
                   >
                     {/* Visual border highlight */}
                     {isActive && (
-                      <span className="absolute bottom-0 left-0 w-full h-[3px] bg-yellow-500 rounded" />
+                      <span className="absolute bottom-0 left-0 w-full h-[3px] bg-yellow-400 rounded" />
                     )}
 
                     <div className="space-y-4">
                       <div className={`w-12 h-12 rounded-xl flex items-center justify-center transition-all ${
-                        isActive ? "bg-yellow-500 text-slate-950" : "bg-slate-700/50 text-slate-300 group-hover:scale-105"
+                        isActive ? "bg-yellow-400 text-slate-950" : "bg-slate-100 text-[#0636A5] group-hover:scale-105"
                       }`}>
                         {cap.icon === "Navigation" && <Navigation size={22} />}
                         {cap.icon === "Cpu" && <Cpu size={22} />}
@@ -82,18 +82,18 @@ export default function CapabilitiesSlider() {
                       </div>
 
                       <div className="space-y-1.5">
-                        <h3 className={`font-display text-lg font-bold tracking-widest uppercase mt-2 transition-colors ${isActive ? "text-yellow-400" : "text-white"}`}>
+                        <h3 className={`font-display text-lg font-bold tracking-widest uppercase mt-2 transition-colors ${isActive ? "text-yellow-400" : "text-slate-900"}`}>
                           {cap.title}
                         </h3>
-                        <p className="font-sans text-xs sm:text-sm text-slate-300 font-normal leading-relaxed">
+                        <p className={`font-sans text-xs sm:text-sm font-normal leading-relaxed ${isActive ? "text-slate-100" : "text-slate-500"}`}>
                           {cap.desc}
                         </p>
                       </div>
                     </div>
 
-                    <div className="flex items-center justify-between pt-6 mt-4 border-t border-slate-700/40 text-xs font-mono">
-                      <span className="text-slate-400">BENEFICIO</span>
-                      <span className={`font-bold uppercase tracking-wider ${isActive ? "text-emerald-400" : "text-slate-300"}`}>
+                    <div className={`flex items-center justify-between pt-6 mt-4 border-t text-xs font-mono ${isActive ? "border-white/10" : "border-slate-100"}`}>
+                      <span className={isActive ? "text-white/60" : "text-slate-400"}>BENEFICIO</span>
+                      <span className={`font-bold uppercase tracking-wider ${isActive ? "text-yellow-400" : "text-[#0636A5]"}`}>
                         {cap.metric}
                       </span>
                     </div>

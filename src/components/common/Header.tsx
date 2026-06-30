@@ -100,7 +100,7 @@ export default function Header() {
   };
 
   return (
-    <header className={`fixed top-0 left-0 w-full z-[300] flex items-center transition-all duration-300 bg-egyptian-blue/95 backdrop-blur-xl border-b-2 border-yellow-500 h-[90px] ${scrolled ? "shadow-lg bg-egyptian-blue" : ""}`}>
+    <header className={`fixed top-0 left-0 w-full z-[300] flex items-center transition-all duration-300 bg-gradient-to-r from-[#0636A5]/95 to-[#1E3A8A]/95 backdrop-blur-xl border-b-2 border-yellow-500 h-[90px] ${scrolled ? "shadow-lg" : ""}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-between items-center h-full">
         {/* Logo and Slogan */}
         <Link 
@@ -150,7 +150,7 @@ export default function Header() {
               Nosotros 
               <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${activeDropdown === "nosotros" ? "rotate-180 text-yellow-400" : "text-slate-400"}`} />
             </button>
-            <div className={`absolute top-full left-0 bg-egyptian-blue min-w-[260px] border-t-2 border-yellow-500 shadow-2xl rounded-b-xl overflow-hidden transition-all duration-350 border border-slate-700/35 ${
+            <div className={`absolute top-full left-0 bg-gradient-to-b from-[#0636A5] to-[#1E3A8A] min-w-[260px] border-t-2 border-yellow-500 shadow-2xl rounded-b-xl overflow-hidden transition-all duration-350 border border-slate-700/35 ${
               activeDropdown === "nosotros" ? "opacity-100 translate-y-0 visible" : "opacity-0 -translate-y-2 invisible pointer-events-none"
             }`}>
               <a 
@@ -190,7 +190,7 @@ export default function Header() {
               Servicios 
               <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${activeDropdown === "servicios" ? "rotate-180 text-yellow-400" : "text-slate-400"}`} />
             </button>
-            <div className={`absolute top-full left-0 bg-egyptian-blue min-w-[280px] border-t-2 border-yellow-500 shadow-2xl rounded-b-xl overflow-hidden transition-all duration-350 border border-slate-700/35 ${
+            <div className={`absolute top-full left-0 bg-gradient-to-b from-[#0636A5] to-[#1E3A8A] min-w-[280px] border-t-2 border-yellow-500 shadow-2xl rounded-b-xl overflow-hidden transition-all duration-350 border border-slate-700/35 ${
               activeDropdown === "servicios" ? "opacity-100 translate-y-0 visible" : "opacity-0 -translate-y-2 invisible pointer-events-none"
             }`}>
               <a 
@@ -288,7 +288,7 @@ export default function Header() {
 
       {/* Mobile drawer screen overlay */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 top-[90px] w-full h-[calc(100vh-90px)] bg-egyptian-blue/98 backdrop-blur-xl z-[290] flex flex-col p-6 sm:p-8 justify-between gap-6 overflow-y-auto lg:hidden animate-in slide-in-from-right duration-350 border-t border-slate-700/20">
+        <div className="fixed inset-0 top-[90px] w-full h-[calc(100vh-90px)] bg-gradient-to-b from-[#0636A5]/98 to-[#172554]/98 backdrop-blur-xl z-[290] flex flex-col p-6 sm:p-8 justify-between gap-6 overflow-y-auto lg:hidden animate-in slide-in-from-right duration-350 border-t border-slate-700/20">
           <div className="space-y-6">
             <Link 
               href="/" 

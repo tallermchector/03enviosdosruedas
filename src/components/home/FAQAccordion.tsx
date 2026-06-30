@@ -11,7 +11,7 @@ export default function FAQAccordion() {
   };
 
   return (
-    <section id="faq" className="relative bg-white py-20 border-b border-slate-200">
+    <section id="faq" className="relative bg-white py-20 border-b border-slate-200 z-10 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.05)]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

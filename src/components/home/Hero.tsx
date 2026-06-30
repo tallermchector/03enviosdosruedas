@@ -24,17 +24,16 @@ export default function Hero({ onOpenCalculator }: HeroProps) {
   };
 
   return (
-    <section className="relative min-h-[calc(100vh-90px)] mt-[90px] bg-slate-950 flex items-center overflow-hidden py-16 sm:py-24">
+    <section className="relative min-h-[calc(100vh-90px)] mt-[90px] bg-gradient-to-br from-[#0636A5] via-[#1E3A8A] to-[#172554] flex items-center overflow-hidden py-16 sm:py-24 text-white">
       {/* City Route Network Background and gradient mask */}
       <div className="absolute inset-0 z-0">
         <img 
           src="/hero_background.jpeg" 
           alt="Envíos DosRuedas Red de Distribución" 
-          className="w-full h-full object-cover opacity-35 scale-105 select-none pointer-events-none"
+          className="w-full h-full object-cover opacity-15 scale-105 select-none pointer-events-none"
           referrerPolicy="no-referrer"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-slate-900/60 z-10" />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/50 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0636A5]/90 via-[#1E3A8A]/95 to-[#172554]/95 z-10" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-20">

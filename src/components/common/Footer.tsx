@@ -37,7 +37,7 @@ export default function Footer() {
   };
 
   return (
-    <footer id="contacto" className="relative bg-[#1E3A8A] text-slate-100 pt-20 pb-8 border-t-4 border-yellow-500 overflow-hidden">
+    <footer id="contacto" className="relative bg-gradient-to-br from-[#0636A5] via-[#1E3A8A] to-[#172554] text-slate-100 pt-20 pb-8 border-t-4 border-yellow-500 overflow-hidden">
       
       {/* Decorative background logo watermarks */}
       <div className="absolute -bottom-16 -right-16 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl pointer-events-none" />

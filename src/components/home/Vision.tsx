@@ -8,7 +8,7 @@ export default function Vision() {
   const toggleModal = () => setModalOpen(!modalOpen);
 
   return (
-    <section id="nosotros" className="relative bg-slate-50 py-20 border-b border-slate-200">
+    <section id="nosotros" className="relative bg-white py-20 border-b border-slate-200 z-10 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.05)]">
       {/* Dynamic grid background */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.03)_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none" />
 

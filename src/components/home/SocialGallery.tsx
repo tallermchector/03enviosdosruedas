@@ -15,14 +15,14 @@ export default function SocialGallery() {
   const duplicatedPosts = [...CALLOUT_POSTS, ...CALLOUT_POSTS, ...CALLOUT_POSTS];
 
   return (
-    <section id="redes" className="relative bg-white pt-20 pb-0 overflow-hidden">
+    <section id="redes" className="relative bg-blue-100 text-slate-800 pt-20 pb-0 overflow-hidden border-y border-blue-200/60">
       
       {/* Brand CTA Call Connect */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4 mb-16">
-        <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-pink-500/10 text-pink-600 rounded-full font-sans text-xs sm:text-sm font-semibold tracking-wider uppercase">
+        <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-pink-500/10 text-pink-600 rounded-full font-sans text-xs sm:text-sm font-semibold tracking-wider uppercase border border-pink-500/20">
           <Heart size={14} fill="currentColor" /> Conecta con Nosotros
         </span>
-        <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-blue-900 tracking-wider uppercase leading-none">
+        <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0636A5] tracking-wider uppercase leading-none">
           Sigue Nuestro Movimiento
         </h2>
         
